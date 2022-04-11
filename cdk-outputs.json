@@ -1,0 +1,9 @@
+{
+  "AlustaAuthentication": {
+    "UserPoolClientId": "2h8a2cqb3l46gu1bviglk89n4b",
+    "UserPoolId": "eu-west-1_ghF2RJrOD"
+  },
+  "AlustaApiGwFrontend": {
+    "BaseDomain": "demoqa.com"
+  }
+}
