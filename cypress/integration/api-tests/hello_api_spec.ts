@@ -1,4 +1,4 @@
-import { User, alma_user } from "../../support/user";
+import { User, test_user } from "../../support/user";
 
 describe("First api tests", () => {
   before(() => {
@@ -11,7 +11,7 @@ describe("First api tests", () => {
      * Those functions updating password to cognito and secretmanager
      */
     // Commented sign in-functionality off until tests can use secretmanager
-    cy.task<User>("getUserPassword", alma_user).then((user: User) => {
+    cy.task<User>("getUserPassword", test_user).then((user: User) => {
       cy.signin(user.user_name, user.password).then(() => {
         cy.task("log", "AccessToken:");
         cy.task("log", window.localStorage.getItem("accessToken"));
